@@ -30,7 +30,7 @@ concat
 
 
 
-map,filter
+삭제시  filter 사용
 
 - 이벤트 설정 순서 
 
@@ -51,6 +51,8 @@ map,filter
 함수 <-> 버튼
 
 
+
+수정시 map사용
 
 1.수정버튼 추가
 
