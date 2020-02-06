@@ -7,7 +7,7 @@ class Phoneitem extends Component{
         name : '',
         phone : ''
     }
-    componentDidUpdate(preProps,presState){
+    componentDidUpdate(preProps,presState){ // 화면이 변할때 마다 호출
         const {info, onUpdate} =this.props;
         console.log(info.name + "/"+info.phone);
         console.log(presState.editable+"/"+this.state.editable)
