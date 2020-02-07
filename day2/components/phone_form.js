@@ -35,6 +35,7 @@ handleSubmit=(e)=>{
                 onChange={this.handleChange}
                 name='phone'/> 
                 <button  type="submit" >등록</button>
+                
 
             </form>
             </div>

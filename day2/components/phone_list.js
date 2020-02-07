@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Phoneitem from './phone_item';
 
 class PhoneList extends Component {
+    shouldComponentUpdate(nextProps, nextstate){
+        return nextProps.data!==this.props.data;
+      }
 
     
     render(){

@@ -11,7 +11,13 @@ class App extends Component{
         name : '관리자',
         phone : '010-000-0000'
       }
-    ]
+    ],
+    keyword:''
+  }
+  handleChange =(e)=>{
+    this.setState({
+      keyword: e.target.value
+    })
   }
   handleUpdate = (selected_id, data) => {
     const {contacts} =this.state;
@@ -47,17 +53,28 @@ class App extends Component{
 
     })
   }
+
   render(){
-    const {contacts} =this.state;
+    const {contacts, keyword} =this.state;
+    //전체목록 contacts, 검색할 키워드 keyword
+    //contacts에서 keyword인 데이터만 검색해서 전달(list)
+    //contacts.filter(v => (조건) ? true : false)
+    const filteredContacts = contacts.filter(v => v.name.indexOf(keyword)!== -1);
+    
     // console.log(this.state) // {contacts : [...]}
     // console.log(this.state.contacts)//[...]
     // console.log(contacts)///[...]
   return (
-    <div>
+    <div className="App-header">
       <PhoneForm
         onCreate={this.handleCreate}/>
+      <p>
+        <input placeholder="검색"
+        onChange={this.handleChange}
+        value={this.state.keyword}/>
+      </p>
       <PhoneList 
-      data ={this.state.contacts}
+      data ={filteredContacts} // 검색 
       onRemove={this.handleRemove}
       onUpdate={this.handleUpdate}/>
     </div>
