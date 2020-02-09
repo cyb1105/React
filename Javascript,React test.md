@@ -225,5 +225,65 @@ function TestComponent(props) {
 }
 ```
 
+## 5 
 
+- 외부에서 사용할 수 있도록 선언
+
+```react
+import React, { Component } from 'react';
+import Bpp, {Dpp} from './Bpp.js';  // Bpp.js에 Bpp,Dpp 클래스 컴포넌트 
+import Cpp from './Cpp.js';        
+								//각 컴포넌트 import
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Bpp></Bpp>
+        <Cpp/>
+        <Dpp/>
+      </div>           // 컴포넌트 사용
+    );
+  }
+}
+
+export default App;
+```
+
+## 6
+
+- Jsx문법 특징
+  - React.createElement 코드를 HTML처럼 작성할 수 있도록 지원
+  - 하나의 root element를 가짐
+  - 모든 element는 closer필요
+  - javascript 사용시 { } 사용
+  - 삼항연산자나 and연산자를 사용한 조건부 렌더링 ( if문 사용 불가)
+  - 객체 형태로 style(css)작성 후 className속성에서 사용
+
+## 7
+
+- props
+  - 부모 컴포넌트가 자식 컴포넌트에게 전달하는값
+  - 자식 컴포넌트에서는 props의 값을 수정할 수 없음
+  - props값은 this.키워드를 이용하여 사용
+  - this.props.name
+
+- state
+  - 컴포넌트 내부에 선언하여 사용되는 보관용 데이터값
+  - 동적인 데이터 처리
+  - this.state.number
+
+## 8
+
+```react
+import React,{Component} from 'react';
+
+class App extends Component{
+render(){
+return(
+	<div></div>
+	)
+	}
+}
+export default App;
+```
 
