@@ -47,7 +47,7 @@
   
 - 문서 객체 삽입(2)
   - $(A)append(B) : [A]+ B
-  - $(A)preppendTo(B) : B +[A]
+  - $(A)preppend(B) : B +[A]
   - $(A)After(B) : [A] + B
   - $(A)Before(B): B + [A]
 
