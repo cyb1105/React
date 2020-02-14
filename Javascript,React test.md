@@ -12,12 +12,13 @@
 
 	- <head> 영역이나 <body> 영역에 선언하면 됩니다.
 	
-	```html
+	```javascript
 	<!DOCTYPE html>
 	<html>
 	<head>
 		<script>
-		
+	        <div>
+	        </div>
 		</script>
 	</head>
 	<body>
