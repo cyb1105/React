@@ -1,6 +1,6 @@
 # Javascript
 
-# 1
+## 1
 
 - Javascript  변수 선언
 
@@ -26,7 +26,7 @@
 	</html>
 	```
 
-# 2
+## 2
 - DOM내무 element선택자
   
   - getElementByid(id) : 특정 id값을 가진 element를 반환
@@ -34,11 +34,11 @@
   - getElementByTagName(tagName) : tagname 매개변수와 일치하는 문서 객체를 배열로 가져옴 
   -  querySelector(),querySelectorAll()
 
-# 3
+## 3
 
 - alert("안녕하세요") : 안녕하세요라는 경고창의 띄움
 
-# 4
+## 4
 
 - 문서 객체 삽입(1)
   - $(A)appendTo(B) :  [B] + A
@@ -61,7 +61,7 @@
     | .empty()  | 선택한 요소의 자식 요소를 모두 삭제한다.                     |
     | .unwrap() | 선택한 요소의 부모 요소를 삭제한다.                          |
 
-# 5
+## 5
 
 - jQuery의 특징
   - 웹에서 자주 사용하는 기능의 간편화
@@ -70,7 +70,7 @@
   - 메서드 체인 : 여러 동작을 한줄에 표현가능
   - 크로스 브라우저 지원 : 이벤트나 함수들의 문장을 하나의 표현으로 사용가능
 
-# 6
+## 6
 
 - jQuery에서 가장 먼저 호출되는 함수 : .ready(function() 
 
@@ -86,7 +86,7 @@ $(document).ready(function() { alert("로딩 완료"); });
 </script>             /// jQuery에서 가장 먼저 호출	
 ```
 
-# 7
+## 7
 
 - jQuery 선택자
 
@@ -97,7 +97,7 @@ $(document).ready(function() { alert("로딩 완료"); });
 - $('body > *').css('color', 'red') -  자손 선택자 (body태그의 자식 태그)
   - $('body *').css('color', 'red') - 후손 선택자 (body태그 후손 모든 태그)
 
-# 8
+## 8
 
 - jQuery 배열 관리 
 
@@ -123,7 +123,7 @@ $(document).ready(function() {
   });
 ```
 
-# 9 
+## 9 
 
 - on()메소드
 
@@ -144,7 +144,7 @@ $("p").on("click", function(){
 -  event.preventDefault()
    -  이벤트 위임
 
-# 10
+## 10
 
 - setTimeout([Function], [Milliseconds])
   -  특정 시간 이 후, 단 한번만 특정 함수 또는 코드를 실행시킬 때 사용합니다.
