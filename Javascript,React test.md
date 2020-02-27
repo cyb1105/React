@@ -67,7 +67,7 @@
   - 웹에서 자주 사용하는 기능의 간편화
   - CSS셀렉터 : 읽기 쉬운 형태로 사용가능
   - 플러그인 아키텍쳐 : 수많은 플러그인 사용가능
-  - 메서드 체인 : 여러 동작을 한줄에 표현가능
+  - method 체인 : 여러 동작을 한줄에 표현가능
   - 크로스 브라우저 지원 : 이벤트나 함수들의 문장을 하나의 표현으로 사용가능
 
 ## 6
@@ -211,7 +211,7 @@ $("p").on("click", function(){
 ```react
 class Welcome extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}</h1>;
+    return <h1>Hello java, {this.props.name}</h1>;
   }
 }
 export default Wlecome;
