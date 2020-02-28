@@ -132,7 +132,7 @@ $(Selector).on.(eventName, function(event){})
 ```javascript
 $("p").on("click", function(){
  alert("문장이 클릭되었습니다.");
-});
+});//클릭 메소드 
 ```
 
 -  .off() 메소드
@@ -190,7 +190,7 @@ $("p").on("click", function(){
 - React 특징
   - libraries
   - references
-  - 높은 자유도  - 라우터,상태관리는 자체 내장되어 있지 않기 때문에, 자율적인 3rdparty library 사용가능
+  - 높은 자유도  - 라우터,상 태관리는 자체 내장되어 있지 않기 때문에, 자율적인 3rdparty library 사용가능
   - component
   - Vitual DOM
   - JSX
@@ -248,7 +248,7 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App; // 외부에서 사용가능하게 선언
 ```
 
 ## 6
